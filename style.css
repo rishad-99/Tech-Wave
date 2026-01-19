@@ -76,10 +76,13 @@ hr {
 }
 #banner .banner_image img {
   width: 100%;
-  background-position: center;
+  display: inline-block;
+  max-width: 1600px;
 }
 #banner {
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 #banner .banner_image {
   position: absolute;
@@ -104,7 +107,7 @@ hr {
 .circle_container {
   position: relative;
   top: 90px;
-  left: 615px;
+  left: 0;
 }
 .banner_info {
   text-align: center;
