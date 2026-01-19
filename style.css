@@ -217,6 +217,93 @@ hr {
   line-height: 20px;
   margin-top: 16px;
 }
+#features .features_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 120px;
+}
+#features .features_body {
+  width: 100%;
+  background-color: #230e3d;
+}
+#features .features_contents h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 120px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+#features .features_container > * {
+  /* border: 2px solid var(--secondary-color); */
+  padding: 30px;
+  background-color: rgba(53, 17, 101, 0.4);
+  color: #fff;
+  border-radius: 40px;
+}
+.premium {
+  grid-area: premium;
+}
+.premium img {
+  margin-top: 100px;
+}
+.premium p,
+.resourses p {
+  max-width: 300px;
+}
+.mobile {
+  grid-area: mobile;
+}
+.mobile img {
+  margin-top: 30px;
+}
+.global {
+  grid-area: global;
+}
+.global img {
+  margin-top: 20px;
+}
+.interviews {
+  grid-area: interviews;
+}
+.interviews img {
+  margin-top: 30px;
+}
+.resourses {
+  grid-area: resourses;
+}
+.resourses img {
+  margin-top: 40px;
+}
+#features .features_container .premium h3,
+.mobile h3,
+.global h3,
+.interviews h3,
+.resourses h3 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px 0px;
+}
+#features .features_container .premium p,
+.mobile p,
+.global p,
+.interviews p,
+.resourses p {
+  font-size: 16px;
+  font-weight: 300;
+  opacity: 60%;
+  padding: 16px 0px;
+  line-height: 24px;
+}
+#features .features_container {
+  display: grid;
+  gap: 30px;
+
+  grid-template-areas:
+    "premium mobile mobile"
+    "premium global global"
+    "interviews interviews resourses";
+}
 
 /* mobile responsive */
 @media (max-width: 576px) {
@@ -300,6 +387,36 @@ hr {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 40px;
     gap: 40px;
+    padding-bottom: 40px;
+  }
+  #features .features_container {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    grid-template-areas:
+      "premium"
+      "mobile"
+      "global"
+      "interviews"
+      "resourses";
+  }
+  #features .features_contents h1 {
+    font-size: 32px;
+    padding-top: 40px;
+    margin-bottom: 16px;
+  }
+  #features .features_container > * {
+    margin: 20px 20px 0px 20px;
+  }
+  .premium img,
+  .interviews img,
+  .resourses img {
+    margin-top: 20px;
+  }
+  .premium p,
+  .resourses p {
+    max-width: 400px;
+  }
+  #features .features_container {
     padding-bottom: 40px;
   }
 }
