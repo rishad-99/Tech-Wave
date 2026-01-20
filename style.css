@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 :root {
   --primary-color: #1a0b2e;
-  --secondary-color: #6700cd;
+  --secondary-color: #3b0076;
   --gradient-color: linear-gradient(
     15deg,
     rgba(247, 233, 63, 1) 10%,
@@ -305,6 +305,109 @@ hr {
     "interviews interviews resourses";
 }
 
+#episodes .container {
+  background-color: var(--primary-color);
+}
+#episodes h3 {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+#episodes .episodes_container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+.episodes_card {
+  background-color: #250d44;
+  border-radius: 20px;
+}
+.episodes_card h4 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+  max-width: 330px;
+  padding: 24px 25px 0px 24px;
+}
+.episodes_card p {
+  font-size: 16px;
+  color: #fff;
+  opacity: 60%;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 330px;
+  padding: 24px 25px 0px 24px;
+}
+.episodes_card h5 {
+  font-size: 16px;
+  color: #00ff88;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 24px 25px 12px 24px;
+}
+.episodes_card h5 i {
+  padding-right: 6px;
+}
+
+.episodes_card iframe {
+  width: 330px;
+  height: 214px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#episodes .host_container h2 {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+}
+.host_container .host_contents {
+  display: flex;
+  justify-content: center;
+  max-width: 1120px;
+  margin: 0 auto;
+  background-color: rgb(53, 17, 101, 0.4);
+  border-radius: 40px;
+}
+.host_image img {
+  padding: 40px 24px 40px 40px;
+}
+.host_details h6 {
+  font-size: 32px;
+  font-weight: 650;
+  color: #fff;
+  margin-top: 48px;
+}
+.host_details p {
+  font-size: 16px;
+  color: #fff;
+  opacity: 60%;
+  font-weight: 300;
+  line-height: 24px;
+  max-width: 896px;
+  padding: 16px 40px 16px 0px;
+}
+.social_icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.social_icons img {
+  padding: 10px 15px 10px 15px;
+  margin-top: 5px;
+}
+.social_icons .icon_cotainer {
+  border: 2px solid #533c72;
+  border-radius: 50%;
+}
+.host_container {
+  padding-bottom: 120px;
+}
 /* mobile responsive */
 @media (max-width: 576px) {
   .logo {
