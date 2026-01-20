@@ -106,6 +106,19 @@ hr {
   top: 90px;
   left: 0;
 }
+.orbit {
+  width: 85%;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .circle_container img:first-child {
   width: 85%;
   height: auto;
@@ -135,6 +148,7 @@ hr {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
+  opacity: 60%;
   padding-bottom: 24px;
 }
 .new {
@@ -185,6 +199,7 @@ hr {
   font-weight: 250;
   line-height: 20px;
   color: #fff;
+  opacity: 60%;
   padding: 10px;
 }
 #about .about_data p:nth-child(5) {
@@ -408,6 +423,47 @@ hr {
 .host_container {
   padding-bottom: 120px;
 }
+
+footer .footer_image img {
+  width: 100%;
+  max-width: 1600px;
+  display: block;
+  background-position: center;
+}
+.footer_details {
+  margin-top: 120px;
+  text-align: center;
+}
+footer .footer_contents {
+  position: relative;
+}
+footer .footer_image {
+  position: relative;
+  z-index: 1;
+}
+footer .footer_details {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+.footer_icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 32px 0px 32px 0px;
+}
+.footicon_container {
+  display: flex;
+  gap: 8px;
+}
+.footicon_container p,
+.footer_details {
+  font-size: 16px;
+  color: #fff;
+  opacity: 60%;
+  font-weight: 300;
+}
+
 /* mobile responsive */
 @media (max-width: 576px) {
   .logo {
@@ -552,7 +608,8 @@ hr {
     padding: 10px 25px 20px 24px;
   }
   .episodes_card iframe {
-    width: 536px;
+    width: 100%;
+    max-width: 536px;
     height: 214px;
   }
   #episodes .host_container h2 {
@@ -568,6 +625,7 @@ hr {
     margin: 20px;
   }
   .host_image img {
+    width: 100%;
     padding: 24px 24px 16px 40px;
   }
   .host_details h6 {
@@ -582,5 +640,21 @@ hr {
   .social_icons {
     justify-content: center;
     padding-bottom: 24px;
+  }
+  .footer_details {
+    margin-top: 40px;
+  }
+  .footer_icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 20px;
+  }
+  footer .footer_image img {
+    min-height: 50vh;
+    height: auto;
   }
 }
